@@ -143,8 +143,7 @@ The system follows a **three-tier architecture**:
 ---
 
 ## 9. Project Structure
-```text
-FWD(SemProj)
+
 
 client/ (React Frontend)
 ├── src/
