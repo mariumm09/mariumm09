@@ -1,4 +1,4 @@
-# Fake News Detection System  
+# Fake News Detection System +TF-IDF + Logistic Regression+FastAPI ML service
 AI-Based Text Classification using TF-IDF & Logistic Regression
 
 ---
