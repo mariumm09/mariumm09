@@ -51,35 +51,41 @@ The project integrates **TF-IDF + Logistic Regression**, a **FastAPI ML service*
 
 --- 
 ## Project Structure
+FWD(SemProj)
+
+client/                         (React Frontend)
 │
-├── client/                         # React Frontend
-│   ├── src/
-│   │   ├── components/             # Reusable UI components
-│   │   ├── pages/                  # Main screens/pages
-│   │   ├── services/               # API service calls
-│   │   ├── App.jsx                 # Root component
-│   │   └── main.jsx                # Entry point
-│   ├── index.html
-│   ├── package.json
-│   └── vite.config.js
+├─ src/
+│  ├─ components/               Reusable UI components
+│  ├─ pages/                    Main screens/pages
+│  ├─ services/                 API service calls
+│  ├─ App.jsx                   Root component
+│  └─ main.jsx                  Entry point
 │
-├── server/                         # Node.js Backend
-│   ├── server.js                   # Express server entry point
-│   ├── package.json
-│   └── node_modules/
-│
-├── fake-news-api/                  # FastAPI ML Service
-│   ├── app.py                      # FastAPI application
-│   ├── model.pkl                   # Trained ML model
-│   ├── vectorizer.pkl              # TF-IDF vectorizer
-│   ├── requirements.txt
-│   └── __pycache__/
-│
-├── fake-news.ipynb                 # Model training notebook (Kaggle/Colab)
-├── README.md                       # Project documentation
-└── .gitignore
+├─ index.html
+├─ package.json
+└─ vite.config.js
 
 
+server/                         (Node.js Backend)
+│
+├─ server.js                    Express server entry point
+├─ package.json
+└─ node_modules/
+
+
+fake-news-api/                  (FastAPI ML Service)
+│
+├─ app.py                       FastAPI application
+├─ model.pkl                    Trained ML model
+├─ vectorizer.pkl               TF-IDF vectorizer
+├─ requirements.txt
+└─ __pycache__/
+
+
+fake-news.ipynb                 Model training notebook (Kaggle / Colab)
+README.md                       Project documentation
+.gitignore
 --------
 ## API Endpoints
 
@@ -120,14 +126,4 @@ npm run dev
 - Improve model accuracy with deep learning
 - Add multilingual support
 
-
------
-
-
-
-
-
-
-
-## 📁 Project Structure
 
