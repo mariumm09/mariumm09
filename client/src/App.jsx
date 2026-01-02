@@ -24,23 +24,39 @@ export default function App() {
 
   return (
     <div className="container">
-      <h1>AI New Authentication</h1>
-      <div className="sub"> Fact-check claims with Wikipedia + GNews</div>
-
-      <ClaimForm onSubmit={onSubmit} loading={loading} />
-
-      {error && (
-        <div className="card" style={{ marginTop: 16, borderColor: "#6b1d1d" }}>
-          <div className="small">Error</div>
-          <div>{error}</div>
+      <div className="header">
+        <div>
+          <div className="title">Fake News Detector</div>
+          <div className="subtitle">
+            Paste a news statement (English or Roman Urdu). We’ll classify it as FAKE or REAL with confidence.
+          </div>
         </div>
-      )}
+        <div className="pill">TF-IDF • Logistic Regression</div>
+      </div>
 
-      <ResultCard result={result} />
+      <div className="grid">
+        <div className="card">
+          <div className="cardTitle">Check a claim</div>
 
-      <div className="small" style={{ marginTop: 16 }}>
-        Tip: switch provider to OpenRouter in <code>server/.env</code> to use
-        <code> perplexity/sonar-pro-search</code>.
+          <ClaimForm onSubmit={onSubmit} loading={loading} />
+
+          {error && (
+            <div className="card error" style={{ marginTop: 14 }}>
+              <div className="cardTitle">Error</div>
+              <div>{error}</div>
+            </div>
+          )}
+
+          <div className="small">
+            Tip: Short claims work best. Example: “Petrol prices increased today in Pakistan.”
+          </div>
+        </div>
+
+        <ResultCard result={result} />
+      </div>
+
+      <div className="small" style={{ textAlign: "center", marginTop: 18 }}>
+        Built with FastAPI + Node + React
       </div>
     </div>
   );
