@@ -51,8 +51,6 @@ The project integrates **TF-IDF + Logistic Regression**, a **FastAPI ML service*
 
 --- 
 ## Project Structure
-FWD(SemProj)
-
 client/                         (React Frontend)
 │
 ├─ src/
